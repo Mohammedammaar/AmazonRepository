@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [VerifyLinkSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="VerifyLinkTest(failed)">
+    <classes>
+      <class name="com.additionalTasks.VerifyBrokenLink">
+        <methods>
+          <include name="ReportSetUp"/>
+          <include name="setup"/>
+          <include name="verifyBrokenLinks"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- com.additionalTasks.VerifyBrokenLink -->
+    </classes>
+  </test> <!-- VerifyLinkTest(failed) -->
+</suite> <!-- Failed suite [VerifyLinkSuite] -->

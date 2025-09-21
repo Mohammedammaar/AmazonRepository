@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-AssesmentSuite" class="navigator-link">
+              <span class="suite-name border-failed">AssesmentSuite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-AssesmentSuite" class="navigator-link ">
+                    <span>C:\Users\HP\eclipse-workspace\AssesmentTask\AmazonTestExecution.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-AssesmentSuite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-AssesmentSuite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-AssesmentSuite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-AssesmentSuite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-AssesmentSuite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-AssesmentSuite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">6 methods, 3 failed,   3 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-AssesmentSuite" class="hide-methods failed suite-AssesmentSuite"> (hide)</a> <!-- hide-methods failed suite-AssesmentSuite -->
+                      <a href="#" panel-name="suite-AssesmentSuite" class="show-methods failed suite-AssesmentSuite"> (show)</a> <!-- show-methods failed suite-AssesmentSuite -->
+                    </span>
+                    <div class="method-list-content failed suite-AssesmentSuite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AssesmentSuite" title="com.testExecution.TestExecution" class="method navigator-link" hash-for-method="invalidLogin(Enter your passw)">invalidLogin(Enter your passw)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AssesmentSuite" title="com.testExecution.TestExecution" class="method navigator-link" hash-for-method="searchUnwantedProductList(Vivo max)">searchUnwantedProductList(Vivo max)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AssesmentSuite" title="com.testExecution.TestExecution" class="method navigator-link" hash-for-method="validateCartNotIncreases">validateCartNotIncreases</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-AssesmentSuite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-AssesmentSuite" class="hide-methods passed suite-AssesmentSuite"> (hide)</a> <!-- hide-methods passed suite-AssesmentSuite -->
+                      <a href="#" panel-name="suite-AssesmentSuite" class="show-methods passed suite-AssesmentSuite"> (show)</a> <!-- show-methods passed suite-AssesmentSuite -->
+                    </span>
+                    <div class="method-list-content passed suite-AssesmentSuite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AssesmentSuite" title="com.testExecution.TestExecution" class="method navigator-link" hash-for-method="addToCartValidate(Added to cart)">addToCartValidate(Added to cart)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AssesmentSuite" title="com.testExecution.TestExecution" class="method navigator-link" hash-for-method="loginApp">loginApp</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AssesmentSuite" title="com.testExecution.TestExecution" class="method navigator-link" hash-for-method="searchProductList(Iphone 16)">searchProductList(Iphone 16)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-AssesmentSuite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-AssesmentSuite" class="panel AssesmentSuite">
+          <div class="suite-AssesmentSuite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.testExecution.TestExecution</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="invalidLogin(Enter your passw)">
+                  </a> <!-- invalidLogin(Enter your passw) -->
+                  <span class="method-name">invalidLogin</span>
+                  <span class="parameters">(Enter your passw)</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	Error not matching expected [Enter your password] but found [Enter your passw]
+	at com.pageExecution.LoginTest.invalidValidation(LoginTest.java:76)
+	at com.testExecution.TestExecution.invalidLogin(TestExecution.java:54)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Loging with the invalid credentials)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="searchUnwantedProductList(Vivo max)">
+                  </a> <!-- searchUnwantedProductList(Vivo max) -->
+                  <span class="method-name">searchUnwantedProductList</span>
+                  <span class="parameters">(Vivo max)</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	Unexpected product is present in the search list: Vivo max expected [true] but found [false]
+	at com.pageExecution.SearchTest.negativeProductValidation(SearchTest.java:63)
+	at com.testExecution.TestExecution.searchUnwantedProductList(TestExecution.java:78)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Validate the search product is not present in the list)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateCartNotIncreases">
+                  </a> <!-- validateCartNotIncreases -->
+                  <span class="method-name">validateCartNotIncreases</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	Cart count increased after invalid action did not expect [0] but found [0]
+	at com.pageExecution.AddToCartTest.cartNotIncrease(AddToCartTest.java:65)
+	at com.testExecution.TestExecution.validateCartNotIncreases(TestExecution.java:106)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Verify the cart count not increase after invalid add-to-cart action)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-AssesmentSuite-class-failed -->
+          <div class="suite-AssesmentSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.testExecution.TestExecution</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addToCartValidate(Added to cart)">
+                  </a> <!-- addToCartValidate(Added to cart) -->
+                  <span class="method-name">addToCartValidate</span>
+                  <span class="parameters">(Added to cart)</span>
+                  <em>
+(Validate the product added to the add to cart)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginApp">
+                  </a> <!-- loginApp -->
+                  <span class="method-name">loginApp</span>
+                  <em>
+(Loging with the valid credentials)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="searchProductList(Iphone 16)">
+                  </a> <!-- searchProductList(Iphone 16) -->
+                  <span class="method-name">searchProductList</span>
+                  <span class="parameters">(Iphone 16)</span>
+                  <em>
+(Validate the search product is present in the list)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-AssesmentSuite-class-passed -->
+        </div> <!-- panel AssesmentSuite -->
+        <div panel-name="test-xml-AssesmentSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\HP\eclipse-workspace\AssesmentTask\AmazonTestExecution.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;AssesmentSuite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;com.utillsPackage.TestListener&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;AssesmentTest&quot;&gt;
+    &lt;parameter name=&quot;expectConfirmMessage&quot; value=&quot;Added to cart&quot;/&gt;
+    &lt;parameter name=&quot;expectedProduct&quot; value=&quot;Iphone 16&quot;/&gt;
+    &lt;parameter name=&quot;expectedError&quot; value=&quot;Enter your passw&quot;/&gt;
+    &lt;parameter name=&quot;unexpectedProduct&quot; value=&quot;Vivo max&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.utillsPackage.RetryFailTest&quot;/&gt;
+      &lt;class name=&quot;com.testExecution.TestExecution&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- AssesmentTest --&gt;
+&lt;/suite&gt; &lt;!-- AssesmentSuite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-AssesmentSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for AssesmentSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">AssesmentTest (2 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-AssesmentSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for AssesmentSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-AssesmentSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for AssesmentSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_AssesmentSuite');
+function tableData_AssesmentSuite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(6);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'addToCartValidate')
+data.setCell(0, 2, 'com.testExecution.TestExecution')
+data.setCell(0, 3, 12153);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'loginApp')
+data.setCell(1, 2, 'com.testExecution.TestExecution')
+data.setCell(1, 3, 7780);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'validateCartNotIncreases')
+data.setCell(2, 2, 'com.testExecution.TestExecution')
+data.setCell(2, 3, 5886);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'invalidLogin')
+data.setCell(3, 2, 'com.testExecution.TestExecution')
+data.setCell(3, 3, 5788);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'searchUnwantedProductList')
+data.setCell(4, 2, 'com.testExecution.TestExecution')
+data.setCell(4, 3, 4307);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'searchProductList')
+data.setCell(5, 2, 'com.testExecution.TestExecution')
+data.setCell(5, 3, 3650);
+window.suiteTableData['AssesmentSuite']= { tableData: data, tableDiv: 'times-div-AssesmentSuite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 39 seconds</span>
+              <div id="times-div-AssesmentSuite">
+              </div> <!-- times-div-AssesmentSuite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-AssesmentSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for AssesmentSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-AssesmentSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-AssesmentSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.testExecution.TestExecution</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">loginApp</span>
+                <span class="method-start">5344 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">13126 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">16403 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">invalidLogin(Enter your passw)</span>
+                <span class="method-start">18761 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">24691 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">27930 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">searchProductList(Iphone 16)</span>
+                <span class="method-start">30161 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">33813 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">37041 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">searchUnwantedProductList(Vivo max)</span>
+                <span class="method-start">39342 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">43794 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">47052 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">addToCartValidate(Added to cart)</span>
+                <span class="method-start">49458 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">61612 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">64923 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">validateCartNotIncreases</span>
+                <span class="method-start">71454 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">77509 ms</span>
+              </div> <!-- configuration-method after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>
