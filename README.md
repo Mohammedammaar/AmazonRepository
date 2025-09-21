@@ -19,26 +19,29 @@ The suite covers:
 - **Git & GitHub** (version control)
 
 ## 📂 Project Structure
-AssesmentTask
-│── src/test/java
-│ ├── com.base # Driver setup and base classes
-│ ├── com.locatorPackage # Page object locators
-│ ├── com.pageExecution # Test case implementations
-│ ├── com.testExecution # Test suite execution classes
-│ ├── com.utilsPackage # Utilities (listeners, retry, reports)
-│ └── com.additionalTasks # Extra tasks (e.g., broken link check)
+📂 Project Structure
+
+```text
+AssesmentTask/
+├── src/test/java
+│   ├── com.base             # Driver setup and base classes
+│   ├── com.locatorPackage   # Page object locators
+│   ├── com.pageExecution    # Test case implementations
+│   ├── com.testExecution    # Test suite execution classes
+│   ├── com.utilsPackage     # Utilities (listeners, retry, reports)
+│   └── com.additionalTasks  # Extra tasks (e.g., broken link check)
 │
-│── test-output # TestNG default reports
-│── target # Maven build output
-│── AmazonTestExecution.xml # TestNG suite for core tests
-│── VerifyLink.xml # TestNG suite for broken link validation
-│── pom.xml # Maven dependencies
-│── README.md # Project documentation
+├── test-output              # TestNG default reports
+├── target                   # Maven build output
+├── AmazonTestExecution.xml  # TestNG suite for core tests
+├── VerifyLink.xml           # TestNG suite for broken link validation
+├── pom.xml                  # Maven dependencies
+└── README.md                # Project documentation
 
 ⚙️ Setup Instructions
 1. **Clone the Repository**
    ```bash
-   git clone https://github.com/<your-username>/AmazonRepository.git
+   git clone https://github.com/Mohammedammaar/AmazonRepository.git
 
 1. *Import Project
     Open Eclipse
