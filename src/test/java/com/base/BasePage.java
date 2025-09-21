@@ -271,13 +271,6 @@ public class BasePage {
 		}
 	}
 
-	public static void frameGetText(WebElement element, int index) {
-		WebDriver move = driver.switchTo().frame(element);
-		String text = element.getText();
-		System.out.println(text);
-
-	}
-
 	public static void keyActions(String k) throws AWTException {
 		Robot r = new Robot();
 		switch (k) {

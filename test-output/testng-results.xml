@@ -1,48 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="6" passed="3" failed="3" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-09-21T20:07:08 IST" name="AssesmentSuite" finished-at="2025-09-21T20:08:29 IST" duration-ms="81034">
+  <suite started-at="2025-09-21T23:37:09 IST" name="VerifyLinkSuite" finished-at="2025-09-21T23:37:56 IST" duration-ms="46846">
     <groups>
     </groups>
-    <test started-at="2025-09-21T20:07:08 IST" name="AssesmentTest" finished-at="2025-09-21T20:08:29 IST" duration-ms="81034">
-      <class name="com.testExecution.TestExecution">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.testExecution.TestExecution@548a24a]" started-at="2025-09-21T20:07:08 IST" name="setup" finished-at="2025-09-21T20:07:13 IST" duration-ms="5343" status="PASS">
+    <test started-at="2025-09-21T23:37:09 IST" name="VerifyLinkTest" finished-at="2025-09-21T23:37:56 IST" duration-ms="46846">
+      <class name="com.additionalTasks.VerifyBrokenLink">
+        <test-method is-config="true" signature="ReportSetUp()[pri:0, instance:com.additionalTasks.VerifyBrokenLink@576d5deb]" started-at="2025-09-21T23:37:09 IST" name="ReportSetUp" finished-at="2025-09-21T23:37:09 IST" duration-ms="241" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ReportSetUp -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.additionalTasks.VerifyBrokenLink@576d5deb]" started-at="2025-09-21T23:37:09 IST" name="setup" finished-at="2025-09-21T23:37:16 IST" duration-ms="6532" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="loginApp()[pri:0, instance:com.testExecution.TestExecution@548a24a]" started-at="2025-09-21T20:07:13 IST" name="loginApp" description="Loging with the valid credentials" finished-at="2025-09-21T20:07:21 IST" duration-ms="7780" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginApp -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.testExecution.TestExecution@548a24a]" started-at="2025-09-21T20:07:21 IST" name="teardown" finished-at="2025-09-21T20:07:24 IST" duration-ms="3273" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.testExecution.TestExecution@548a24a]" started-at="2025-09-21T20:07:24 IST" name="setup" finished-at="2025-09-21T20:07:27 IST" duration-ms="2358" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="invalidLogin(java.lang.String)[pri:1, instance:com.testExecution.TestExecution@548a24a]" started-at="2025-09-21T20:07:27 IST" name="invalidLogin" description="Loging with the invalid credentials" finished-at="2025-09-21T20:07:33 IST" duration-ms="5788" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Enter your passw]]>
-              </value>
-            </param>
-          </params>
+        <test-method signature="verifyBrokenLinks()[pri:0, instance:com.additionalTasks.VerifyBrokenLink@576d5deb]" started-at="2025-09-21T23:37:16 IST" name="verifyBrokenLinks" description="Validate all the links present in the webpage" finished-at="2025-09-21T23:37:55 IST" duration-ms="38681" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[The following asserts failed:
-Error not matching expected [Enter your password] but found [Enter your passw]]]>
+              <![CDATA[Broken link detected: https://twitter.com/boni_gg expected [true] but found [false]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: The following asserts failed:
-Error not matching expected [Enter your password] but found [Enter your passw]
-at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
-at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
-at com.pageExecution.LoginTest.invalidValidation(LoginTest.java:76)
-at com.testExecution.TestExecution.invalidLogin(TestExecution.java:54)
+              <![CDATA[java.lang.AssertionError: Broken link detected: https://twitter.com/boni_gg expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1413)
+at org.testng.Assert.assertTrue(Assert.java:56)
+at com.additionalTasks.VerifyBrokenLink.verifyBrokenLinks(VerifyBrokenLink.java:65)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -76,167 +59,12 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- invalidLogin -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.testExecution.TestExecution@548a24a]" started-at="2025-09-21T20:07:33 IST" name="teardown" finished-at="2025-09-21T20:07:36 IST" duration-ms="3238" status="PASS">
+        </test-method> <!-- verifyBrokenLinks -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.additionalTasks.VerifyBrokenLink@576d5deb]" started-at="2025-09-21T23:37:55 IST" name="teardown" finished-at="2025-09-21T23:37:56 IST" duration-ms="1356" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.testExecution.TestExecution@548a24a]" started-at="2025-09-21T20:07:36 IST" name="setup" finished-at="2025-09-21T20:07:38 IST" duration-ms="2231" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="searchProductList(java.lang.String)[pri:2, instance:com.testExecution.TestExecution@548a24a]" started-at="2025-09-21T20:07:38 IST" name="searchProductList" description="Validate the search product is present in the list" finished-at="2025-09-21T20:07:42 IST" duration-ms="3650" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Iphone 16]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- searchProductList -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.testExecution.TestExecution@548a24a]" started-at="2025-09-21T20:07:42 IST" name="teardown" finished-at="2025-09-21T20:07:45 IST" duration-ms="3227" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.testExecution.TestExecution@548a24a]" started-at="2025-09-21T20:07:45 IST" name="setup" finished-at="2025-09-21T20:07:47 IST" duration-ms="2301" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="searchUnwantedProductList(java.lang.String)[pri:3, instance:com.testExecution.TestExecution@548a24a]" started-at="2025-09-21T20:07:47 IST" name="searchUnwantedProductList" description="Validate the search product is not present in the list" finished-at="2025-09-21T20:07:52 IST" duration-ms="4307" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Vivo max]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[The following asserts failed:
-Unexpected product is present in the search list: Vivo max expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: The following asserts failed:
-Unexpected product is present in the search list: Vivo max expected [true] but found [false]
-at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
-at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
-at com.pageExecution.SearchTest.negativeProductValidation(SearchTest.java:63)
-at com.testExecution.TestExecution.searchUnwantedProductList(TestExecution.java:78)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- searchUnwantedProductList -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.testExecution.TestExecution@548a24a]" started-at="2025-09-21T20:07:52 IST" name="teardown" finished-at="2025-09-21T20:07:55 IST" duration-ms="3256" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.testExecution.TestExecution@548a24a]" started-at="2025-09-21T20:07:55 IST" name="setup" finished-at="2025-09-21T20:07:58 IST" duration-ms="2406" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="addToCartValidate(java.lang.String)[pri:4, instance:com.testExecution.TestExecution@548a24a]" started-at="2025-09-21T20:07:58 IST" name="addToCartValidate" description="Validate the product added to the add to cart" finished-at="2025-09-21T20:08:10 IST" duration-ms="12153" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Added to cart]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addToCartValidate -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.testExecution.TestExecution@548a24a]" started-at="2025-09-21T20:08:10 IST" name="teardown" finished-at="2025-09-21T20:08:13 IST" duration-ms="3311" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.testExecution.TestExecution@548a24a]" started-at="2025-09-21T20:08:13 IST" name="setup" finished-at="2025-09-21T20:08:20 IST" duration-ms="6531" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="validateCartNotIncreases()[pri:5, instance:com.testExecution.TestExecution@548a24a]" started-at="2025-09-21T20:08:20 IST" name="validateCartNotIncreases" description="Verify the cart count not increase after invalid add-to-cart action" finished-at="2025-09-21T20:08:25 IST" duration-ms="5886" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[The following asserts failed:
-Cart count increased after invalid action did not expect [0] but found [0]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: The following asserts failed:
-Cart count increased after invalid action did not expect [0] but found [0]
-at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
-at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
-at com.pageExecution.AddToCartTest.cartNotIncrease(AddToCartTest.java:65)
-at com.testExecution.TestExecution.validateCartNotIncreases(TestExecution.java:106)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateCartNotIncreases -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.testExecution.TestExecution@548a24a]" started-at="2025-09-21T20:08:26 IST" name="teardown" finished-at="2025-09-21T20:08:29 IST" duration-ms="3282" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- com.testExecution.TestExecution -->
-    </test> <!-- AssesmentTest -->
-  </suite> <!-- AssesmentSuite -->
+      </class> <!-- com.additionalTasks.VerifyBrokenLink -->
+    </test> <!-- VerifyLinkTest -->
+  </suite> <!-- VerifyLinkSuite -->
 </testng-results>
