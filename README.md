@@ -2,7 +2,7 @@
 
 ## 📌 Project Overview
 This project is an **automated test suite** developed as part of an assessment task.  
-It validates core functionalities of a sample amazon website using **Selenium WebDriver, Java, TestNG, and Maven**.
+It validates core functionalities of a  amazon website using **Selenium WebDriver, Java, TestNG, and Maven**.
 
 The suite covers:
 - Login functionality
@@ -32,7 +32,7 @@ AssesmentTask/
 │   └── com.additionalTasks  # Extra tasks (e.g., broken link check)
 │
 ├── test-output              # TestNG default reports
-├── target                   # Maven build output
+├── target                   # Extend reports and failed test screenshot
 ├── AmazonTestExecution.xml  # TestNG suite for core tests
 ├── VerifyLink.xml           # TestNG suite for broken link validation
 ├── pom.xml                  # Maven dependencies
