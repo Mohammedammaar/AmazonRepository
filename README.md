@@ -46,19 +46,25 @@ AssesmentTask/
 1. *Import Project
     Open Eclipse
 2. *Import as Maven Project.
-   Download Dependencies
+    Download Dependencies
+3.  *Update dependencies
+     bash
+     mvn clean install
 
 ▶️ Execution Instructions
-Run All Tests
-Open AmazonTestExecution.xml → Right click → Run As → TestNG Suite
+ Run the test suite via TestNG XML:
+ bash
+ mvn clean test -DsuiteXmlFile=testng.xml
+ Alternatively, right-click testng.xml in IDE → Run As → TestNG Suite.
 
-Run Only Broken Link Test
-Open VerifyLink.xml → Right click → Run As → TestNG Suite
+ Run Only Broken Link Test
+ Open VerifyLink.xml in IDE → Right click → Run As → TestNG Suite
 
-
-📊 Reports
-Extent Report → located under target/ folder
-TestNG Report → default report test-output folder
+📊 Reporting
+After execution, reports are generated in the target/ folder.
+Extent Report example:
+target/AmazonSuiteTestReport.html
+Contains pass/fail status, logs, and screenshots (for failed cases).
 
 🧩 Implementation Guidelines Followed
 Page Object Model (POM) for maintainability.
